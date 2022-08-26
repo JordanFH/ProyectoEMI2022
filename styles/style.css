@@ -34,10 +34,6 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
-a:focus {
-  outline: thin dotted;
-}
-
 a:active,
 a:hover {
   outline: 0;
@@ -263,6 +259,10 @@ li {
 
 .container-txt-link {
   display: inline-block;
+}
+
+.container-txt-link a{
+  color: #252525;
 }
 
 a,
@@ -1326,10 +1326,10 @@ section.contact form textarea:valid ~ label {
 }
 
 .container-social-i ul a {
+  font-size: 30px;
   color: #394ff4;
   -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
-  outline: none;
 }
 
 .container-social-i ul a:hover {
@@ -1337,10 +1337,8 @@ section.contact form textarea:valid ~ label {
 }
 
 .container-social-i ul li {
-  width: 22px;
-  height: 22px;
-  -webkit-transform: scale(1.4);
-  transform: scale(1.4);
+  width: 20px;
+  height: 20px;
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
   transition: -webkit-transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
@@ -1348,8 +1346,8 @@ section.contact form textarea:valid ~ label {
 }
 
 .container-social-i ul li:hover {
-  -webkit-transform: scale(1.8);
-  transform: scale(1.8);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 footer {
