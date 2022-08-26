@@ -266,7 +266,7 @@
                     name="name"
                     id="name"
                     required="required"
-                    placeholder="Ejemplo: Juan Pérez"
+                    placeholder="Ingresa tu nombre completo"
                   />
                   <label for="name"
                     >Nombre<span class="required">*</span></label
@@ -278,7 +278,7 @@
                     name="email"
                     id="email"
                     required="required"
-                    placeholder="Ejemplo: juanperez@gmail.com"
+                    placeholder="Ingresa tu correo electrónico"
                   />
                   <label for="email"
                     >Correo<span class="required">*</span></label
@@ -289,8 +289,10 @@
                     type="textbox"
                     name="message"
                     id="message"
+                    maxlength="500"
+                    onfocus="generateMessage()"
                     required="required"
-                    placeholder="Ejemplo: Estimado equipo del Proyecto EMI, deseo contactarme con ustedes."
+                    placeholder='(Presiona "TAB" para generar un mensaje automáticamente)'
                   ></textarea>
                   <label for="message" class="message"
                     >Mensaje<span class="required">*</span></label
@@ -381,6 +383,17 @@
 
       function hideNav() {
         $("input[type=checkbox]").prop("checked", false);
+      }
+
+      function generateMessage() {
+        document
+          .getElementById("message")
+          .addEventListener("keydown", function (e) {
+            if (event.key === "Tab") {
+              this.value =
+                "Estimado equipo del Proyecto EMI, deseo comunicarme con ustedes.";
+            }
+          });
       }
     </script>
   </body>
