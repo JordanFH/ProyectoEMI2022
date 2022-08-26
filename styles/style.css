@@ -258,6 +258,7 @@ li {
   overflow: hidden;
   max-width: 300px;
   margin: 0 auto;
+  padding-bottom: 30px;
 }
 
 .container-txt-link {
@@ -339,16 +340,18 @@ p a::after {
   width: 1.8rem;
   opacity: 0;
   position: absolute;
-  top: 28%;
-  right: 20px;
+  top: 30%;
+  padding-right: 0.8rem;
   -webkit-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
   will-change: right, opacity;
+  display: none;
 }
 
 .btn:hover i {
   opacity: 1;
   right: 0;
+  display: initial;
 }
 
 h2 {
@@ -1020,7 +1023,7 @@ section.sponsor p:first-of-type {
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .container-icons .devicon,
@@ -1031,8 +1034,8 @@ section.sponsor p:first-of-type {
 }
 
 .container-icons .box-icon {
-  width: 50%;
-  height: 142px;
+  width: auto;
+  height: auto;
   margin-bottom: 60px;
 }
 
@@ -1069,26 +1072,35 @@ section.sponsor p:first-of-type {
   min-width: 91px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1100px) {
   .container-icons {
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    flex-wrap: wrap;
   }
 }
 
-@media (min-width: 600px) {
-  .container-icons .box-icon {
-    width: 25%;
+@media (max-width: 950px) {
+  .container-icons {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (min-width: 1024px) {
-  .container-icons .box-icon {
-    width: 12.5%;
+@media (max-width: 650px) {
+  .container-icons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .container-icons {
+    display: block;
   }
 }
 
 .container-icons .container-img-i {
-  display: block;
+  display: flex;
   width: 50%;
   height: 3.5rem;
   margin: 0 auto;
@@ -1199,6 +1211,13 @@ section.contact form textarea:required:invalid {
   box-shadow: 2px 2px #f0535d;
 }
 
+section.contact form label:required:valid,
+section.contact form input:required:valid,
+section.contact form textarea:required:valid {
+  -webkit-box-shadow: 2px 2px #48d8a4;
+  box-shadow: 2px 2px #48d8a4;
+}
+
 section.contact form textarea {
   resize: none;
   height: 150px;
@@ -1229,22 +1248,17 @@ section.contact form label .required {
 
 section.contact form input:focus,
 section.contact form textarea:focus {
+  border: 2px solid #f0535d;
+}
+
+section.contact form input:valid,
+section.contact form textarea:valid {
   border: 2px solid #48d8a4;
 }
 
-section.contact form input:focus::-webkit-input-placeholder,
-section.contact form textarea:focus::-webkit-input-placeholder {
-  color: #3f3f3f;
-}
-
-section.contact form input:focus:-ms-input-placeholder,
-section.contact form textarea:focus:-ms-input-placeholder {
-  color: #3f3f3f;
-}
-
-section.contact form input:focus::-ms-input-placeholder,
-section.contact form textarea:focus::-ms-input-placeholder {
-  color: #3f3f3f;
+section.contact form input:not(:focus),
+section.contact form textarea:not(:focus) {
+  border: 2px solid transparent;
 }
 
 section.contact form input:focus::placeholder,
@@ -1252,16 +1266,16 @@ section.contact form textarea:focus::placeholder {
   color: #3f3f3f;
 }
 
-section.contact form input:focus ~ label,
-section.contact form input:valid ~ label,
+#name:focus ~ label,
+#name:valid ~ label,
 section.contact form textarea:focus ~ label,
 section.contact form textarea:valid ~ label {
   font-size: 0.7rem;
   color: #48d8a4;
 }
 
-section.contact form input:focus ~ label,
-section.contact form input:valid ~ label {
+#name:focus ~ label,
+#name:valid ~ label {
   -webkit-transform: translateY(-80px);
   transform: translateY(-80px);
 }
@@ -1270,6 +1284,15 @@ section.contact form textarea:focus ~ label,
 section.contact form textarea:valid ~ label {
   -webkit-transform: translateY(-168px);
   transform: translateY(-168px);
+}
+
+#email:focus ~ label,
+#email:valid ~ label,
+#email:invalid:not(:placeholder-shown) ~ label {
+  font-size: 0.7rem;
+  color: #48d8a4;
+  -webkit-transform: translateY(-80px);
+  transform: translateY(-80px);
 }
 
 .container-social-i {
@@ -1298,6 +1321,7 @@ section.contact form textarea:valid ~ label {
   color: #394ff4;
   -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
+  outline: none;
 }
 
 .container-social-i ul a:hover {
@@ -1319,16 +1343,6 @@ section.contact form textarea:valid ~ label {
 .container-social-i ul li:hover {
   -webkit-transform: scale(1.8);
   transform: scale(1.8);
-}
-
-.container-social-i ul svg {
-  width: 20px;
-  height: 20px;
-  fill: #394ff4;
-}
-
-.container-social-i ul svg:hover {
-  fill: #f0535d;
 }
 
 footer {

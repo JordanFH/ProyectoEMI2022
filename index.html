@@ -22,7 +22,7 @@
     <link rel="shortcut icon" href="assets/favicon.ico" />
     <title>Proyecto EMI: Educando Mentes Innovadoras</title>
   </head>
-  <body>
+  <body onresize="hideNav()">
     <!------ HEADER ------>
     <header class="home container-outer" id="inicio">
       <div class="wrapper">
@@ -140,8 +140,8 @@
             <div class="container-text">
               <h3>Desarrollo del taller</h3>
               <p>
-                ✅ <b>Lugar: </b>I.E. N°82109 Plan De Tual - Cajamarca<br />
-                ✅ <b>Público objetivo: </b> Niños de 5° a 6° de la I.E.<br />
+                ✅ <b>Lugar: </b>I.E. N°82109 San Antonio Plan Tual<br />
+                ✅ <b>Público objetivo: </b> Niños de 4° a 6° de la I.E.<br />
                 ✅ <b>Fechas: </b><i><u>Por definirse</u></i
                 ><br />
                 ✅ <b>Horarios: </b><i><u>Por definirse</u></i
@@ -202,10 +202,28 @@
             </div>
             <div class="box-icon">
               <a
-                href="https://www.facebook.com/LayconsaPeruCreamosContigo/"
+                href="https://www.facebook.com/pminorteperu/"
                 target="_blank"
-                aria-label="ingresa a la página de Layconsa"
-                ><img src="assets/layconsa-logo.png" alt="logo de Layconsa"
+                aria-label="ingresa a la página de PMI"
+                ><img src="assets/pmi-logo.png" alt="logo de PMI"
+              /></a>
+            </div>
+            <div class="box-icon">
+              <a
+                href="https://www.facebook.com/cipcn"
+                target="_blank"
+                aria-label="ingresa a la página de CIP"
+                ><img src="assets/cip-logo.png" alt="logo de CIP"
+              /></a>
+            </div>
+            <div class="box-icon">
+              <a
+                href="https://www.cipcajamarca.org.pe/sistemas/"
+                target="_blank"
+                aria-label="ingresa a la página de CIP Sistemas"
+                ><img
+                  src="assets/cip-sistemas-logo.png"
+                  alt="logo de CIP Sistemas"
               /></a>
             </div>
           </div>
@@ -278,7 +296,7 @@
                     >Mensaje<span class="required">*</span></label
                   >
                 </div>
-                <button class="btn" value="send">
+                <button class="btn" type="submit" value="send">
                   <span>Enviar</span>
                   <i class="far fa-envelope-open" aria-hidden="true"></i>
                 </button>
@@ -297,6 +315,17 @@
                       aria-label="abre el link al Facebook del proyecto."
                       ><i class="fab fa-facebook-f" aria-hidden="true"></i
                       ><span class="visually-hidden">Facebook</span></a
+                    >
+                  </li>
+
+                  <!-- INSTAGRAM -->
+                  <li>
+                    <a
+                      href="https://www.instagram.com/proyecto_emi/"
+                      target="_blank"
+                      aria-label="abre el link al Instagram del proyecto."
+                      ><i class="fab fa-instagram" aria-hidden="true"></i
+                      ><span class="visually-hidden">Instagram</span></a
                     >
                   </li>
 
@@ -348,6 +377,10 @@
     <script>
       function showMessage() {
         alert("¡Correo enviado correctamente!");
+      }
+
+      function hideNav() {
+        $("input[type=checkbox]").prop("checked", false);
       }
     </script>
   </body>
