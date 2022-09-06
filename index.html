@@ -83,10 +83,10 @@
           <h2>Sobre el Proyecto</h2>
           <h3>Educando Mentes Innovadoras</h3>
           <div class="container-content">
-            <div class="container-img-profile">
+            <div class="container-media-1">
               <img src="assets/proyecto-logo.png" alt="logo del proyecto" />
             </div>
-            <div class="container-text">
+            <div class="container-text-1">
               <h4>
                 Taller de capacitación en tecnologías para alumnos de escuelas
                 rurales.
@@ -102,6 +102,10 @@
                 progreso, logrando de esta manera ir disminuyendo las brechas de
                 educación presentes en nuestra sociedad cajamarquina.
               </p>
+            </div>
+          </div>
+          <div class="container-content">
+            <div class="container-text-2">
               <p>
                 Este proyecto va a consistir en brindar un
                 <b>taller de capacitación gratuito</b> para los alumnos de una
@@ -122,6 +126,12 @@
                 <a href="#contacto" class="u-line">¡Comunícate con nosotros!</a>
               </div>
             </div>
+            <div class="container-media-2">
+              <video id="video" playsinline poster="assets/poster.png">
+                <source src="video/Proyecto EMI - Intro.mp4" type="video/mp4" />
+                Tu navegador no soporta este video.
+              </video>
+            </div>
           </div>
         </div>
         <!-- /.wrapper -->
@@ -140,16 +150,15 @@
             <div class="container-text">
               <h3>Desarrollo del taller</h3>
               <p>
-                ✅ <b>Lugar: </b>I.E. N°82109 San Antonio Plan Tual<br />
-                ✅ <b>Público objetivo: </b> Niños de 4° a 6° de la I.E.<br />
-                ✅ <b>Fechas: </b><i><u>Por definirse</u></i
-                ><br />
-                ✅ <b>Horarios: </b><i><u>Por definirse</u></i
-                ><br />
-                ✅ <b>Duración: </b><i><u>Por definirse</u></i
-                ><br />
-                ✅ <b>Modalidad: </b>Presencial<br />
-                ✅ <b>Costo: </b>Gratuito<br />
+                ✅ <b>Lugar:</b> I.E. N°82109 San Antonio Plan Tual<br />
+                ✅ <b>Público objetivo:</b> Niños de 4° a 6° de la I.E.<br />
+                ✅ <b>Fechas:</b> Miércoles 7 y Viernes 9 de Septiembre<br />
+                ✅ <b>Horarios:</b> 8 - 10 a.m. y 10 - 12 p.m. respectivamente
+                <br />
+                ✅ <b>Duración:</b> 2 horas<br />
+                ✅ <b>Duración:</b> Presencial<br />
+                ✅ <b>Costo:</b>
+                Gratuito
               </p>
             </div>
             <!-- /.container-t-text -->
@@ -157,11 +166,12 @@
             <div class="container-text">
               <h3>Beneficios del taller</h3>
               <p>
-                🏆 <b>Certificados: </b>Serán entregados al finalizar el
+                🏆 <b>Certificados:</b> Serán entregados al finalizar el
                 taller<br />
-                🏆 <b>Premios: </b>Se entregarán a los estudiantes más
-                destacados del taller<br />
+                🏆 <b>Premios:</b>
+                Serán entregados al finalizar el taller
               </p>
+              <img src="assets/diploma.png" alt="imagen de un diploma" />
             </div>
             <!-- /.container-t-text -->
           </div>
@@ -384,6 +394,14 @@
       function hideNav() {
         $("input[type=checkbox]").prop("checked", false);
       }
+
+      $("#video").hover(function toggleControls() {
+        if (this.hasAttribute("controls")) {
+          this.removeAttribute("controls");
+        } else {
+          this.setAttribute("controls", "controls");
+        }
+      });
 
       function generateMessage() {
         document

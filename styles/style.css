@@ -249,11 +249,11 @@ li {
   padding: 0;
 }
 
-.container-img-profile {
-  border-radius: 50%;
+.container-media {
   overflow: hidden;
   max-width: 300px;
   margin: 0 auto;
+  margin-left: 5%;
   padding-bottom: 30px;
 }
 
@@ -261,7 +261,7 @@ li {
   display: inline-block;
 }
 
-.container-txt-link a{
+.container-txt-link a {
   color: #252525;
 }
 
@@ -917,30 +917,57 @@ section.about {
   padding-bottom: 100px;
 }
 
-section.about .container-text p {
+section.about p {
   text-align: justify;
 }
 
-section.about .container-text h4 {
+section.about .container-text-1 h4 {
   margin: 0 auto;
   text-align: center;
 }
 
-section.about .container-img-profile {
+section.about .container-media-1 {
   max-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+section.about .container-media-2 {
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+section.about .container-media-2 video {
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+  border: rgb(91, 22, 232) 3px solid;
 }
 
 @media (min-width: 700px) {
-  section.about .container-img-profile {
+  section.about .container-media-1 {
     width: 30%;
     margin-top: 20px;
   }
 }
 
 @media (min-width: 700px) {
-  section.about .container-text {
+  section.about .container-text-1 {
     width: 70%;
     padding-left: 5%;
+  }
+}
+
+@media (min-width: 700px) {
+  section.about .container-media-2 {
+    width: 40%;
+  }
+}
+
+@media (min-width: 700px) {
+  section.about .container-text-2 {
+    width: 60%;
+    padding-right: 5%;
   }
 }
 
@@ -972,6 +999,54 @@ section.details {
 
 section.details .container-text .container-p span {
   color: #5ff0bb;
+}
+
+section.details .container-text img {
+  opacity: 80%;
+  width: 175px;
+  height: 175px;
+  object-fit: contain;
+}
+
+section.details .container-text img:hover {
+  opacity: 100%;
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(-2.5deg);
+  }
+  10% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(2.5deg);
+  }
+  30% {
+    transform: rotate(-2.5deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(2.5deg);
+  }
+  60% {
+    transform: rotate(-2.5deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(2.5deg);
+  }
+  90% {
+    transform: rotate(-2.5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 @media (min-width: 700px) {
