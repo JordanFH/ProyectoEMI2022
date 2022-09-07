@@ -1008,7 +1008,8 @@ section.details .container-text img {
   object-fit: contain;
 }
 
-section.details .container-text img:hover {
+section.details .container-text img:hover,
+section.details .container-text img:focus {
   opacity: 100%;
   animation: shake 0.5s;
 }
