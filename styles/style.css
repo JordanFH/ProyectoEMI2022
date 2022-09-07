@@ -1349,6 +1349,11 @@ section.contact form textarea:focus::placeholder {
   color: #3f3f3f;
 }
 
+section.contact form input:not(:focus)::placeholder,
+section.contact form textarea:not(:focus)::placeholder {
+  color: transparent;
+}
+
 #name:focus ~ label,
 #name:valid ~ label,
 section.contact form textarea:focus ~ label,
