@@ -25,6 +25,10 @@
     <title>Proyecto EMI: Educando Mentes Innovadoras</title>
   </head>
   <body onresize="hideNav()">
+    <button type="button" onclick="topFunction()" id="topBtn" title="Go to top">
+      <i class="fas fa-angle-up"></i>
+    </button>
+
     <!------ HEADER ------>
     <header class="home container-outer" id="inicio">
       <div class="wrapper">
@@ -56,6 +60,13 @@
             </li>
             <li>
               <a
+                href="#nosotros"
+                aria-label="ir a la sección de nosotros."
+                >Nosotros</a
+              >
+            </li>
+            <li>
+              <a
                 href="#auspiciadores"
                 aria-label="ir a la sección de auspiciadores."
                 >Auspiciadores</a
@@ -79,20 +90,13 @@
     <div class="angle angle1"></div>
 
     <main>
-      <!------ SECCION SOBRE ------>
+      <!------ SECCIÓN SOBRE ------>
       <section class="about" id="sobre">
         <div class="wrapper">
           <h2>Sobre el Proyecto</h2>
           <h3>Educando Mentes Innovadoras</h3>
           <div class="container-content">
-            <div class="container-media-1">
-              <img src="assets/proyecto-logo.png" alt="logo del proyecto" />
-            </div>
             <div class="container-text-1">
-              <h4>
-                Taller de capacitación en tecnologías para alumnos de escuelas
-                rurales.
-              </h4>
               <p>
                 El proyecto <b>"Educando Mentes Innovadoras"</b> está
                 desarrollado por estudiantes de 7<sup><u>mo</u></sup> ciclo de
@@ -105,6 +109,9 @@
                 educación presentes en nuestra sociedad cajamarquina.
               </p>
             </div>
+            <div class="container-media-1">
+              <img src="assets/proyecto-logo.png" alt="logo del proyecto" />
+            </div>
           </div>
           <div class="container-content">
             <div class="container-text-2">
@@ -115,19 +122,18 @@
                 uso de las tablets, computadoras, entre otras tecnologías con
                 las que cuente la institución educativa y además de capacitar a
                 los estudiantes en los diferentes programas educativos que les
-                van a servir de ayuda para su aprendizaje.
-              </p>
-              <p>
-                <i>
-                  "Estamos felices por colaborar con la población cajamarquina
-                  en la formación de los estudiantes acerca de la tecnología y
-                  su importancia en su formación como ciudadanos del mañana" </i
-                ><span class="bold"> - El Equipo del Proyecto EMI 💻</span>
+                van a servir de ayuda para su aprendizaje. Este taller se
+                desarrollará en la I.E. N°82109 San Antonio Plan Tual para los
+                niños de 4° a 6°. Agradecemos al director de la I.E. el profesor
+                Fredy Esgardo Rojas Chávez, por permitirnos llevar a cabo el
+                presente proyecto y por la cordialidad brindada a todo el
+                equipo.
               </p>
               <div class="container-txt-link">
                 <a href="#contacto" class="u-line">¡Comunícate con nosotros!</a>
               </div>
             </div>
+            <br>
             <div class="container-media-2">
               <video id="video" playsinline poster="assets/poster.png">
                 <source src="video/Proyecto EMI - Intro.mp4" type="video/mp4" />
@@ -183,11 +189,80 @@
       </section>
       <div class="angle angle4"></div>
 
-      <!------ SECCION AUSPICIADORES ------>
+      <!------ SECCIÓN NOSOTROS ------>
+      <section class="team" id="nosotros">
+        <div class="wrapper">
+          <h2>Nosotros</h2>
+          <h3>El equipo del Proyecto EMI</h3>
+          <p>
+            Estamos felices 😀 por colaborar con la población cajamarquina en la
+            formación de los estudiantes acerca de la tecnología 💻 y su
+            importancia en su formación como ciudadanos del mañana 🌞.
+          </p>
+          <br />
+          <div class="container-icons">
+            <div class="box-icon person">
+              <img
+                src="assets/team1.png"
+                title="Jordan Fernández Herrera"
+                alt="imagen de Jordan Fernández Herrera"
+              />
+              <p>
+                <span class="bold">Jordan<br />Fernández Herrera</span>
+              </p>
+            </div>
+            <div class="box-icon person">
+              <img
+                src="assets/team2.png"
+                title="Fernando Wilson López Chalán"
+                alt="imagen de Fernando Wilson López Chalán"
+              />
+              <p>
+                <span class="bold">Fernando Wilson<br />López Chalán</span>
+              </p>
+            </div>
+            <div class="box-icon person">
+              <img
+                src="assets/team3.png"
+                title="Victor Manuel Malimba Minchan"
+                alt="imagen de Victor Manuel Malimba Minchan"
+              />
+              <p>
+                <span class="bold">Victor Manuel<br />Malimba Minchan</span>
+              </p>
+            </div>
+            <div class="box-icon person">
+              <img
+                src="assets/team4.png"
+                title="Erica Yaquelin Saavedra Leiva"
+                alt="imagen de Erica Yaquelin Saavedra Leiva"
+              />
+              <p>
+                <span class="bold">Erica Yaquelin<br />Saavedra Leiva</span>
+              </p>
+            </div>
+            <div class="box-icon person">
+              <img
+                src="assets/team5.png"
+                title="José Ubelser Tamay Nuñez"
+                alt="imagen de José Ubelser Tamay Nuñez"
+              />
+              <p>
+                <span class="bold">José Ubelser<br />Tamay Nuñez</span>
+              </p>
+            </div>
+          </div>
+          <!-- /.container-icons -->
+        </div>
+        <!-- /.wrapper -->
+      </section>
+      <div class="angle angle5"></div>
+
+      <!------ SECCIÓN AUSPICIADORES ------>
       <section class="sponsor" id="auspiciadores">
         <div class="wrapper">
           <h2 class="light">Auspiciadores</h2>
-          <h3>¿Quiénes participan en el proyecto?</h3>
+          <h3>¿Quiénes colaboran con el proyecto?</h3>
           <p>
             <span class="bold"
               >Queremos agradecer a las organizaciones que hacen posible este
@@ -201,7 +276,10 @@
                 href="https://www.facebook.com/unc.edu.pe"
                 target="_blank"
                 aria-label="ingresa a la página de UNC"
-                ><img src="assets/unc-logo.png" alt="logo de UNC"
+                ><img
+                  src="assets/unc-logo.png"
+                  title="Universidad Nacional de Cajamarca"
+                  alt="logo de UNC"
               /></a>
             </div>
             <div class="box-icon">
@@ -209,7 +287,10 @@
                 href="https://www.facebook.com/eapis.unc.edu.pe"
                 target="_blank"
                 aria-label="ingresa a la página de EAPIS"
-                ><img src="assets/sistemas-logo.png" alt="logo de EAPIS"
+                ><img
+                  src="assets/sistemas-logo.png"
+                  title="Escuela Académico Profesional de Ingeniería de Sistemas"
+                  alt="logo de EAPIS"
               /></a>
             </div>
             <div class="box-icon">
@@ -217,7 +298,10 @@
                 href="https://www.facebook.com/pminorteperu/"
                 target="_blank"
                 aria-label="ingresa a la página de PMI"
-                ><img src="assets/pmi-logo.png" alt="logo de PMI"
+                ><img
+                  src="assets/pmi-logo.png"
+                  title="PMI - Capítulo Norte del Perú"
+                  alt="logo de PMI"
               /></a>
             </div>
             <div class="box-icon">
@@ -225,7 +309,10 @@
                 href="https://www.facebook.com/cipcn"
                 target="_blank"
                 aria-label="ingresa a la página de CIP"
-                ><img src="assets/cip-logo.png" alt="logo de CIP"
+                ><img
+                  src="assets/cip-logo.png"
+                  title="Colegio de Ingenieros del Perú"
+                  alt="logo de CIP"
               /></a>
             </div>
             <div class="box-icon">
@@ -236,6 +323,7 @@
                 ><img
                   src="assets/cip-sistemas-logo.png"
                   alt="logo de CIP Sistemas"
+                  title="Colegio de Ingenieros del Perú - Capítulo de Sistemas"
               /></a>
             </div>
           </div>
@@ -245,7 +333,7 @@
       </section>
       <div class="angle angle3"></div>
 
-      <!------ SECCION CONTACTO ------>
+      <!------ SECCIÓN CONTACTO ------>
       <section class="contact" id="contacto">
         <div class="wrapper">
           <h2>Contacto</h2>
@@ -414,6 +502,29 @@
                 "Estimado equipo del Proyecto EMI, deseo comunicarme con ustedes.";
             }
           });
+      }
+    </script>
+    <script>
+      let topButton = document.getElementById("topBtn");
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > screen.height * 2 ||
+          document.documentElement.scrollTop > screen.height * 2
+        ) {
+          topButton.style.display = "block";
+        } else {
+          topButton.style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
       }
     </script>
   </body>
