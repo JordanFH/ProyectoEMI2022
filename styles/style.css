@@ -351,8 +351,7 @@ p a::after {
   transition: all 300ms ease-out;
 }
 
-#topBtn:hover,
-#topBtn:focus {
+#topBtn:hover {
   background-color: rgba(57, 79, 244, 1);
   -webkit-box-shadow: 2px 2px #f48480;
   box-shadow: 2px 2px #f48480;
@@ -485,7 +484,7 @@ nav label span {
 }
 
 nav label span:first-child {
-  top: 7px;
+  top: 8px;
 }
 
 nav label span:last-child {
@@ -504,7 +503,7 @@ nav input {
 
 nav input:checked + label span {
   opacity: 0;
-  top: 50%;
+  top: 35%;
 }
 
 nav input:checked + label span:first-child {
@@ -1153,13 +1152,13 @@ section.sponsor p:first-of-type {
   margin-bottom: 60px;
 }
 
-.container-icons .box-icon:not(.person){
+.container-icons .box-icon:not(.person) {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.container-icons .box-icon a:hover{
+.container-icons .box-icon a:hover {
   background-color: transparent;
 }
 
@@ -1168,7 +1167,7 @@ section.sponsor p:first-of-type {
 }
 
 .container-icons .person,
-.container-icons .person ~ p{
+.container-icons .person ~ p {
   -webkit-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
 }
@@ -1178,7 +1177,7 @@ section.sponsor p:first-of-type {
   color: #394ff4;
 }
 
-.container-icons .person{
+.container-icons .person {
   padding: 10px;
   background-color: #fff;
   border-radius: 10px;
@@ -1187,7 +1186,7 @@ section.sponsor p:first-of-type {
   margin-right: 10px;
 }
 
-.container-icons .person:hover{
+.container-icons .person:hover {
   transform: translateY(-10px);
 }
 

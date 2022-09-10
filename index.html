@@ -25,7 +25,11 @@
     <title>Proyecto EMI: Educando Mentes Innovadoras</title>
   </head>
   <body onresize="hideNav()">
-    <button type="button" onclick="topFunction()" id="topBtn" title="Ir al inicio">
+    <button
+      type="button"
+      id="topBtn"
+      title="Ir al inicio"
+    >
       <i class="fas fa-angle-up"></i>
     </button>
 
@@ -59,9 +63,7 @@
               >
             </li>
             <li>
-              <a
-                href="#nosotros"
-                aria-label="ir a la sección de nosotros."
+              <a href="#nosotros" aria-label="ir a la sección de nosotros."
                 >Nosotros</a
               >
             </li>
@@ -133,7 +135,7 @@
                 <a href="#contacto" class="u-line">¡Comunícate con nosotros!</a>
               </div>
             </div>
-            <br>
+            <br />
             <div class="container-media-2">
               <video id="video" playsinline poster="assets/poster.png">
                 <source src="video/Proyecto EMI - Intro.mp4" type="video/mp4" />
@@ -517,10 +519,9 @@
         }
       }
 
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
+      $("#topBtn").click(function () {
+        $("html, body").animate({ scrollTop: 0 }, 500);
+      });
     </script>
   </body>
 </html>
