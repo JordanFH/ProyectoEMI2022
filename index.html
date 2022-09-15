@@ -25,11 +25,7 @@
     <title>Proyecto EMI: Educando Mentes Innovadoras</title>
   </head>
   <body onresize="hideNav()">
-    <button
-      type="button"
-      id="topBtn"
-      title="Ir al inicio"
-    >
+    <button type="button" id="topBtn" title="Ir al inicio">
       <i class="fas fa-angle-up"></i>
     </button>
 
@@ -249,6 +245,8 @@
               </p>
             </div>
           </div>
+          <br />
+          <br />
           <!-- /.container-icons -->
         </div>
         <!-- /.wrapper -->
@@ -261,11 +259,8 @@
           <h2 class="light">Auspiciadores</h2>
           <h3>¿Quiénes colaboran con el proyecto?</h3>
           <p>
-            <span class="bold"
-              >Queremos agradecer a las organizaciones que hacen posible este
-              proyecto. <br />
-              Visítenlos en sus redes sociales. 😉</span
-            >
+            Queremos agradecer a las organizaciones que hacen posible este
+            proyecto. Visítenlos en sus redes sociales 😉.
           </p>
           <div class="container-icons">
             <div class="box-icon">
@@ -328,8 +323,8 @@
         </div>
         <!-- /.wrapper -->
       </section>
-      <div class="angle angle3"></div>
 
+      <div class="angle angle3"></div>
       <!------ SECCIÓN CONTACTO ------>
       <section class="contact" id="contacto">
         <div class="wrapper">
@@ -521,6 +516,7 @@
 
       $("#topBtn").click(function () {
         $("html, body").animate({ scrollTop: 0 }, 500);
+        $("#topBtn").blur();
       });
     </script>
   </body>
